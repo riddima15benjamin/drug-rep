@@ -1,0 +1,568 @@
+2025-10-07 22:41:42,921 - INFO - ============================================================
+2025-10-07 22:41:42,921 - INFO - Starting Data Preprocessing
+2025-10-07 22:41:42,921 - INFO - ============================================================
+2025-10-07 22:41:42,922 - INFO - Metadata logged
+2025-10-07 22:41:42,922 - INFO - 
+Step 1: Detecting CSV files...
+2025-10-07 22:41:42,923 - INFO - Found CSV file: CTD_chemicals_diseases.csv
+2025-10-07 22:41:42,941 - ERROR - No CSV files detected! Exiting.
+2025-10-07 22:41:49,429 - INFO - ============================================================
+2025-10-07 22:41:49,430 - INFO - Starting Graph Construction
+2025-10-07 22:41:49,431 - INFO - ============================================================
+2025-10-07 22:41:49,431 - INFO - 
+Step 1: Loading preprocessed data...
+2025-10-07 22:41:49,431 - INFO - Loading preprocessed data...
+2025-10-07 22:41:55,004 - INFO - ============================================================
+2025-10-07 22:41:55,004 - INFO - Starting GCN Training
+2025-10-07 22:41:55,004 - INFO - ============================================================
+2025-10-07 22:41:55,004 - INFO - Hyperparameters: epochs=100, lr=0.001, hidden=128, emb=128, dropout=0.5
+2025-10-07 22:41:55,004 - INFO - Using CPU
+2025-10-07 22:41:55,004 - INFO - 
+Step 1: Loading data...
+2025-10-07 22:42:00,798 - INFO - ============================================================
+2025-10-07 22:42:00,799 - INFO - Starting Model Evaluation
+2025-10-07 22:42:00,799 - INFO - ============================================================
+2025-10-07 22:42:00,799 - INFO - 
+Step 1: Loading model and data...
+2025-10-07 22:43:23,103 - INFO - ============================================================
+2025-10-07 22:43:23,104 - INFO - Starting Data Preprocessing
+2025-10-07 22:43:23,104 - INFO - ============================================================
+2025-10-07 22:43:23,104 - INFO - Metadata logged
+2025-10-07 22:43:23,104 - INFO - 
+Step 1: Detecting CSV files...
+2025-10-07 22:43:23,105 - INFO - Found CSV file: CTD_chemicals_diseases.csv
+2025-10-07 22:43:23,127 - ERROR - No CSV files detected! Exiting.
+2025-10-07 22:46:27,734 - INFO - ============================================================
+2025-10-07 22:46:27,734 - INFO - Starting Data Preprocessing
+2025-10-07 22:46:27,734 - INFO - ============================================================
+2025-10-07 22:46:27,735 - INFO - Metadata logged
+2025-10-07 22:46:27,735 - INFO - 
+Step 1: Detecting CSV files...
+2025-10-07 22:46:27,735 - INFO - Found CSV file: CTD_chemicals_diseases.csv
+2025-10-07 22:46:27,744 - INFO -   -> Inferred as chemical-disease from filename
+2025-10-07 22:46:27,745 - INFO - 
+Step 2: Loading interactions...
+2025-10-07 22:46:37,198 - INFO - Loaded chemical_disease: 9515672 rows (with header)
+2025-10-07 22:46:38,403 - INFO - Processed chemical_disease: 9515672 valid interactions
+2025-10-07 22:46:38,405 - INFO - 
+Step 3: Selecting top nodes by frequency...
+2025-10-07 22:46:39,785 - INFO - Total interactions before filtering: 9515672
+2025-10-07 22:46:39,788 - INFO - Selected nodes: 150 chemicals, 100 diseases, 0 genes
+2025-10-07 22:46:39,789 - INFO - 
+Step 4: Filtering interactions...
+2025-10-07 22:46:40,146 - INFO - Filtered interactions: 1834287 chem-dis, 0 chem-gene, 0 gene-dis
+2025-10-07 22:46:41,218 - INFO - 
+Step 5: Computing node features...
+2025-10-07 22:47:13,502 - INFO - Created feature matrix: shape (250, 4)
+2025-10-07 22:47:13,504 - INFO - 
+Step 6: Creating manifest...
+2025-10-07 22:47:13,507 - INFO - Created manifest with 11 files
+2025-10-07 22:47:13,507 - INFO - 
+============================================================
+2025-10-07 22:47:13,507 - INFO - Preprocessing Complete!
+2025-10-07 22:47:13,507 - INFO - ============================================================
+2025-10-07 22:47:13,507 - INFO - Total nodes: 250
+2025-10-07 22:47:13,507 - INFO - Total edges: 1834287
+2025-10-07 22:47:13,507 - INFO - Feature dimension: 4
+2025-10-07 22:47:13,507 - INFO - 
+Output files saved in ./outputs/
+2025-10-07 22:47:37,671 - INFO - ============================================================
+2025-10-07 22:47:37,671 - INFO - Starting Data Preprocessing
+2025-10-07 22:47:37,671 - INFO - ============================================================
+2025-10-07 22:47:37,672 - INFO - Metadata logged
+2025-10-07 22:47:37,672 - INFO - 
+Step 1: Detecting CSV files...
+2025-10-07 22:47:37,673 - INFO - Found CSV file: CTD_chemicals_diseases.csv
+2025-10-07 22:47:37,680 - INFO -   -> Inferred as chemical-disease from filename
+2025-10-07 22:47:37,680 - INFO - 
+Step 2: Loading interactions...
+2025-10-07 22:47:45,590 - INFO - Loaded chemical_disease: 9515672 rows (with header)
+2025-10-07 22:47:46,800 - INFO - Processed chemical_disease: 9515672 valid interactions
+2025-10-07 22:47:46,801 - INFO - 
+Step 3: Selecting top nodes by frequency...
+2025-10-07 22:47:48,073 - INFO - Total interactions before filtering: 9515672
+2025-10-07 22:47:48,075 - INFO - Selected nodes: 150 chemicals, 100 diseases, 0 genes
+2025-10-07 22:47:48,077 - INFO - 
+Step 4: Filtering interactions...
+2025-10-07 22:47:48,435 - INFO - Filtered interactions: 1834287 chem-dis, 0 chem-gene, 0 gene-dis
+2025-10-07 22:47:49,291 - INFO - 
+Step 5: Computing node features...
+2025-10-07 22:48:18,172 - INFO - Created feature matrix: shape (250, 4)
+2025-10-07 22:48:18,174 - INFO - 
+Step 6: Creating manifest...
+2025-10-07 22:48:18,176 - INFO - Created manifest with 12 files
+2025-10-07 22:48:18,176 - INFO - 
+============================================================
+2025-10-07 22:48:18,176 - INFO - Preprocessing Complete!
+2025-10-07 22:48:18,177 - INFO - ============================================================
+2025-10-07 22:48:18,177 - INFO - Total nodes: 250
+2025-10-07 22:48:18,177 - INFO - Total edges: 1834287
+2025-10-07 22:48:18,177 - INFO - Feature dimension: 4
+2025-10-07 22:48:18,177 - INFO - 
+Output files saved in ./outputs/
+2025-10-07 22:48:33,229 - INFO - ============================================================
+2025-10-07 22:48:33,230 - INFO - Starting Graph Construction
+2025-10-07 22:48:33,230 - INFO - ============================================================
+2025-10-07 22:48:33,230 - INFO - 
+Step 1: Loading preprocessed data...
+2025-10-07 22:48:33,230 - INFO - Loading preprocessed data...
+2025-10-07 22:48:33,524 - INFO - Loaded interactions: 1834287 chem-dis, 0 chem-gene, 0 gene-dis
+2025-10-07 22:48:33,525 - INFO - Loaded 250 nodes with 4 features
+2025-10-07 22:48:33,525 - INFO - 
+Step 2: Building edge index...
+2025-10-07 22:49:04,715 - INFO - Built edge index: 3668574 edges (undirected)
+2025-10-07 22:49:04,784 - INFO - 
+Step 3: Creating node type tensor...
+2025-10-07 22:49:04,786 - INFO - 
+Step 4: Creating PyTorch Geometric Data object...
+2025-10-07 22:49:04,787 - INFO - Created PyG Data object:
+2025-10-07 22:49:04,787 - INFO -   Nodes: 250
+2025-10-07 22:49:04,787 - INFO -   Edges: 3668574
+2025-10-07 22:49:04,787 - INFO -   Features: torch.Size([250, 4])
+2025-10-07 22:49:04,787 - INFO - 
+Step 5: Creating NetworkX graph...
+2025-10-07 22:49:33,511 - INFO - Created NetworkX graph: 250 nodes, 100 edges
+2025-10-07 22:49:33,511 - INFO - 
+Step 6: Saving graph data...
+2025-10-07 22:49:33,572 - INFO - Saved PyTorch Geometric data to outputs\graph_data.pt
+2025-10-07 22:49:33,573 - INFO - Saved NetworkX graph to outputs\graph.gpickle
+2025-10-07 22:49:33,573 - INFO - 
+============================================================
+2025-10-07 22:49:33,573 - INFO - Graph Construction Complete!
+2025-10-07 22:49:33,573 - INFO - ============================================================
+2025-10-07 22:49:33,573 - INFO - Output files:
+2025-10-07 22:49:33,574 - INFO -   - graph_data.pt (PyTorch Geometric)
+2025-10-07 22:49:33,574 - INFO -   - graph.gpickle (NetworkX)
+2025-10-07 22:50:02,775 - INFO - ============================================================
+2025-10-07 22:50:02,776 - INFO - Starting GCN Training
+2025-10-07 22:50:02,776 - INFO - ============================================================
+2025-10-07 22:50:02,776 - INFO - Hyperparameters: epochs=100, lr=0.001, hidden=128, emb=128, dropout=0.5
+2025-10-07 22:50:02,777 - INFO - Using CPU
+2025-10-07 22:50:02,777 - INFO - 
+Step 1: Loading data...
+2025-10-07 22:51:14,430 - INFO - ============================================================
+2025-10-07 22:51:14,430 - INFO - Starting GCN Training
+2025-10-07 22:51:14,430 - INFO - ============================================================
+2025-10-07 22:51:14,430 - INFO - Hyperparameters: epochs=100, lr=0.001, hidden=128, emb=128, dropout=0.5
+2025-10-07 22:51:14,431 - INFO - Using CPU
+2025-10-07 22:51:14,431 - INFO - 
+Step 1: Loading data...
+2025-10-07 22:51:14,452 - INFO - Loaded graph: 250 nodes, 3668574 edges
+2025-10-07 22:51:14,452 - INFO - 
+Step 2: Extracting chemical-disease pairs...
+2025-10-07 22:51:14,453 - INFO - Found 150 chemicals and 100 diseases
+2025-10-07 22:51:21,071 - INFO - Found 100 positive chemical-disease edges
+2025-10-07 22:51:21,071 - INFO - 
+Step 3: Splitting edges...
+2025-10-07 22:51:21,072 - INFO - Split edges: 70 train, 15 val, 15 test
+2025-10-07 22:51:21,075 - INFO - Negative samples: 70 train, 15 val, 15 test
+2025-10-07 22:51:21,076 - INFO - 
+Step 4: Initializing model...
+2025-10-07 22:51:21,108 - INFO - Model: 17152 parameters
+2025-10-07 22:51:21,108 - INFO - 
+Step 5: Training...
+2025-10-07 22:51:39,000 - INFO - Epoch 1/100 - Loss: 0.6963, Val AUC: 0.4889, Val AUPR: 0.5704
+2025-10-07 22:53:04,380 - INFO - ============================================================
+2025-10-07 22:53:04,380 - INFO - Starting Data Preprocessing
+2025-10-07 22:53:04,380 - INFO - ============================================================
+2025-10-07 22:53:04,381 - INFO - Metadata logged
+2025-10-07 22:53:04,381 - INFO - 
+Step 1: Detecting CSV files...
+2025-10-07 22:53:04,381 - INFO - Found CSV file: CTD_chemicals_diseases.csv
+2025-10-07 22:53:04,396 - INFO -   -> Inferred as chemical-disease from filename
+2025-10-07 22:53:04,396 - INFO - 
+Step 2: Loading interactions...
+2025-10-07 22:53:12,709 - INFO - Loaded chemical_disease: 9515672 rows (with header)
+2025-10-07 22:53:13,791 - INFO - Processed chemical_disease: 9515672 valid interactions
+2025-10-07 22:53:13,793 - INFO - 
+Step 3: Selecting top nodes by frequency...
+2025-10-07 22:53:15,063 - INFO - Total interactions before filtering: 9515672
+2025-10-07 22:53:15,066 - INFO - Selected nodes: 80 chemicals, 50 diseases, 0 genes
+2025-10-07 22:53:15,067 - INFO - 
+Step 4: Filtering interactions...
+2025-10-07 22:53:15,407 - INFO - Filtered interactions: 1109827 chem-dis, 0 chem-gene, 0 gene-dis
+2025-10-07 22:53:16,002 - INFO - 
+Step 5: Computing node features...
+2025-10-07 22:53:25,507 - INFO - Created feature matrix: shape (130, 4)
+2025-10-07 22:53:25,508 - INFO - 
+Step 6: Creating manifest...
+2025-10-07 22:53:25,511 - INFO - Created manifest with 17 files
+2025-10-07 22:53:25,512 - INFO - 
+============================================================
+2025-10-07 22:53:25,512 - INFO - Preprocessing Complete!
+2025-10-07 22:53:25,512 - INFO - ============================================================
+2025-10-07 22:53:25,512 - INFO - Total nodes: 130
+2025-10-07 22:53:25,512 - INFO - Total edges: 1109827
+2025-10-07 22:53:25,512 - INFO - Feature dimension: 4
+2025-10-07 22:53:25,512 - INFO - 
+Output files saved in ./outputs/
+2025-10-07 22:57:51,955 - INFO - ============================================================
+2025-10-07 22:57:51,955 - INFO - Starting Data Preprocessing
+2025-10-07 22:57:51,955 - INFO - ============================================================
+2025-10-07 22:57:51,955 - INFO - Metadata logged
+2025-10-07 22:57:51,956 - INFO - 
+Step 1: Detecting CSV files...
+2025-10-07 22:57:51,956 - INFO - Found CSV file: CTD_chemicals_diseases.csv
+2025-10-07 22:57:51,969 - INFO -   -> Inferred as chemical-disease from filename
+2025-10-07 22:57:51,969 - INFO - 
+Step 2: Loading interactions...
+2025-10-07 22:58:00,213 - INFO - Loaded chemical_disease: 9515672 rows (with header)
+2025-10-07 22:58:01,367 - INFO - Processed chemical_disease: 9515672 valid interactions
+2025-10-07 22:58:01,368 - INFO - 
+Step 3: Selecting top nodes by frequency...
+2025-10-07 22:58:02,672 - INFO - Total interactions before filtering: 9515672
+2025-10-07 22:58:02,675 - INFO - Selected nodes: 100 chemicals, 60 diseases, 0 genes
+2025-10-07 22:58:02,677 - INFO - 
+Step 4: Filtering interactions...
+2025-10-07 22:58:02,989 - INFO - Filtered interactions: 1272970 chem-dis, 0 chem-gene, 0 gene-dis
+2025-10-07 22:58:03,606 - INFO - 
+Step 5: Computing node features...
+2025-10-07 22:58:16,441 - INFO - Created feature matrix: shape (160, 4)
+2025-10-07 22:58:16,443 - INFO - 
+Step 6: Creating manifest...
+2025-10-07 22:58:16,449 - INFO - Created manifest with 17 files
+2025-10-07 22:58:16,449 - INFO - 
+============================================================
+2025-10-07 22:58:16,449 - INFO - Preprocessing Complete!
+2025-10-07 22:58:16,449 - INFO - ============================================================
+2025-10-07 22:58:16,449 - INFO - Total nodes: 160
+2025-10-07 22:58:16,449 - INFO - Total edges: 1272970
+2025-10-07 22:58:16,449 - INFO - Feature dimension: 4
+2025-10-07 22:58:16,449 - INFO - 
+Output files saved in ./outputs/
+2025-10-07 22:58:47,995 - INFO - ============================================================
+2025-10-07 22:58:47,995 - INFO - Starting Graph Construction
+2025-10-07 22:58:47,995 - INFO - ============================================================
+2025-10-07 22:58:47,995 - INFO - 
+Step 1: Loading preprocessed data...
+2025-10-07 22:58:47,995 - INFO - Loading preprocessed data...
+2025-10-07 22:58:48,213 - INFO - Loaded interactions: 1272970 chem-dis, 0 chem-gene, 0 gene-dis
+2025-10-07 22:58:48,214 - INFO - Loaded 160 nodes with 4 features
+2025-10-07 22:58:48,214 - INFO - 
+Step 2: Building edge index...
+2025-10-07 22:59:09,818 - INFO - Built edge index: 2545940 edges (undirected)
+2025-10-07 22:59:09,867 - INFO - 
+Step 3: Creating node type tensor...
+2025-10-07 22:59:09,869 - INFO - 
+Step 4: Creating PyTorch Geometric Data object...
+2025-10-07 22:59:09,870 - INFO - Created PyG Data object:
+2025-10-07 22:59:09,870 - INFO -   Nodes: 160
+2025-10-07 22:59:09,870 - INFO -   Edges: 2545940
+2025-10-07 22:59:09,870 - INFO -   Features: torch.Size([160, 4])
+2025-10-07 22:59:09,870 - INFO - 
+Step 5: Creating NetworkX graph...
+2025-10-07 22:59:30,169 - INFO - Created NetworkX graph: 160 nodes, 60 edges
+2025-10-07 22:59:30,169 - INFO - 
+Step 6: Saving graph data...
+2025-10-07 22:59:30,227 - INFO - Saved PyTorch Geometric data to outputs\graph_data.pt
+2025-10-07 22:59:30,228 - INFO - Note: Use weights_only=False when loading this file due to PyG Data objects
+2025-10-07 22:59:30,228 - INFO - Saved NetworkX graph to outputs\graph.gpickle
+2025-10-07 22:59:30,228 - INFO - 
+============================================================
+2025-10-07 22:59:30,228 - INFO - Graph Construction Complete!
+2025-10-07 22:59:30,228 - INFO - ============================================================
+2025-10-07 22:59:30,228 - INFO - Output files:
+2025-10-07 22:59:30,228 - INFO -   - graph_data.pt (PyTorch Geometric)
+2025-10-07 22:59:30,228 - INFO -   - graph.gpickle (NetworkX)
+2025-10-07 22:59:56,619 - INFO - ============================================================
+2025-10-07 22:59:56,619 - INFO - Starting GCN Training
+2025-10-07 22:59:56,619 - INFO - ============================================================
+2025-10-07 22:59:56,619 - INFO - Hyperparameters: epochs=50, lr=0.001, hidden=128, emb=128, dropout=0.5
+2025-10-07 22:59:56,622 - INFO - Using GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+2025-10-07 22:59:56,622 - INFO - 
+Step 1: Loading data...
+2025-10-07 22:59:56,636 - INFO - Loaded graph: 160 nodes, 2545940 edges
+2025-10-07 22:59:56,725 - INFO - 
+Step 2: Extracting chemical-disease pairs...
+2025-10-07 22:59:56,725 - INFO - Found 100 chemicals and 60 diseases
+2025-10-07 23:00:22,973 - INFO - ============================================================
+2025-10-07 23:00:22,974 - INFO - Starting GCN Training
+2025-10-07 23:00:22,974 - INFO - ============================================================
+2025-10-07 23:00:22,974 - INFO - Hyperparameters: epochs=50, lr=0.001, hidden=128, emb=128, dropout=0.5
+2025-10-07 23:00:22,976 - INFO - Using GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+2025-10-07 23:00:22,976 - INFO - 
+Step 1: Loading data...
+2025-10-07 23:00:22,987 - INFO - Loaded graph: 160 nodes, 2545940 edges
+2025-10-07 23:00:23,051 - INFO - 
+Step 2: Extracting chemical-disease pairs...
+2025-10-07 23:00:23,051 - INFO - Found 100 chemicals and 60 diseases
+2025-10-07 23:00:27,595 - INFO - Found 60 positive chemical-disease edges
+2025-10-07 23:00:27,597 - INFO - 
+Step 3: Splitting edges...
+2025-10-07 23:00:27,598 - INFO - Split edges: 42 train, 9 val, 9 test
+2025-10-07 23:00:27,599 - INFO - Negative samples: 42 train, 9 val, 9 test
+2025-10-07 23:00:27,601 - INFO - 
+Step 4: Initializing model...
+2025-10-07 23:00:27,632 - INFO - Model: 17152 parameters
+2025-10-07 23:00:27,633 - INFO - 
+Step 5: Training...
+2025-10-07 23:00:28,503 - INFO - Epoch 1/50 - Loss: 0.7772, Val AUC: 0.5309, Val AUPR: 0.5274
+2025-10-07 23:00:28,505 - INFO -   -> New best model saved (AUC: 0.5309)
+2025-10-07 23:00:29,275 - INFO - Epoch 5/50 - Loss: 0.6035, Val AUC: 0.6173, Val AUPR: 0.5644
+2025-10-07 23:00:29,276 - INFO -   -> New best model saved (AUC: 0.6173)
+2025-10-07 23:00:30,218 - INFO - Epoch 10/50 - Loss: 0.5829, Val AUC: 0.6173, Val AUPR: 0.5644
+2025-10-07 23:00:31,158 - INFO - Epoch 15/50 - Loss: 0.5746, Val AUC: 0.6543, Val AUPR: 0.5880
+2025-10-07 23:00:31,161 - INFO -   -> New best model saved (AUC: 0.6543)
+2025-10-07 23:00:32,100 - INFO - Epoch 20/50 - Loss: 0.5322, Val AUC: 0.6543, Val AUPR: 0.5880
+2025-10-07 23:00:33,041 - INFO - Epoch 25/50 - Loss: 0.5269, Val AUC: 0.7160, Val AUPR: 0.6455
+2025-10-07 23:00:33,042 - INFO -   -> New best model saved (AUC: 0.7160)
+2025-10-07 23:00:33,981 - INFO - Epoch 30/50 - Loss: 0.5583, Val AUC: 0.8889, Val AUPR: 0.7857
+2025-10-07 23:00:33,982 - INFO -   -> New best model saved (AUC: 0.8889)
+2025-10-07 23:00:34,924 - INFO - Epoch 35/50 - Loss: 0.5504, Val AUC: 0.8889, Val AUPR: 0.7857
+2025-10-07 23:00:35,864 - INFO - Epoch 40/50 - Loss: 0.5107, Val AUC: 0.8395, Val AUPR: 0.7440
+2025-10-07 23:00:36,807 - INFO - Epoch 45/50 - Loss: 0.5025, Val AUC: 0.8395, Val AUPR: 0.7440
+2025-10-07 23:00:37,751 - INFO - Epoch 50/50 - Loss: 0.5110, Val AUC: 0.8395, Val AUPR: 0.7440
+2025-10-07 23:00:37,753 - INFO - 
+Step 6: Generating final embeddings...
+2025-10-07 23:00:37,844 - INFO - Saved embeddings: shape (160, 128)
+2025-10-07 23:00:37,934 - INFO - 
+Final Test Performance:
+2025-10-07 23:00:37,934 - INFO -   Test AUC: 0.8519
+2025-10-07 23:00:37,934 - INFO -   Test AUPR: 0.8436
+2025-10-07 23:00:37,934 - INFO - 
+============================================================
+2025-10-07 23:00:37,934 - INFO - Training Complete!
+2025-10-07 23:00:37,934 - INFO - ============================================================
+2025-10-07 23:00:37,934 - INFO - Output files:
+2025-10-07 23:00:37,935 - INFO -   - model_best.pt
+2025-10-07 23:00:37,935 - INFO -   - embeddings.npy
+2025-10-07 23:00:37,935 - INFO -   - train_log.csv
+2025-10-07 23:00:37,935 - INFO -   - final_metrics.json
+2025-10-07 23:00:55,715 - INFO - ============================================================
+2025-10-07 23:00:55,715 - INFO - Starting Model Evaluation
+2025-10-07 23:00:55,715 - INFO - ============================================================
+2025-10-07 23:00:55,715 - INFO - 
+Step 1: Loading model and data...
+2025-10-07 23:00:55,752 - INFO - Loaded model and data: 160 nodes, embeddings shape (160, 128)
+2025-10-07 23:00:55,752 - INFO - 
+Step 2: Evaluating on test set...
+2025-10-07 23:00:55,757 - INFO - 
+Test Set Metrics:
+2025-10-07 23:00:55,757 - INFO -   ROC AUC: 0.8519
+2025-10-07 23:00:55,757 - INFO -   AUPR: 0.8436
+2025-10-07 23:00:55,757 - INFO -   Precision@10: 0.8000
+2025-10-07 23:00:55,757 - INFO -   Recall@10: 0.8889
+2025-10-07 23:00:55,757 - INFO - 
+Step 3: Generating plots...
+2025-10-07 23:00:56,342 - INFO - Saved ROC curve to outputs\plots\roc_curve.png
+2025-10-07 23:00:56,591 - INFO - Saved PR curve to outputs\plots\pr_curve.png
+2025-10-07 23:00:56,591 - INFO - 
+Step 4: Generating predictions for all diseases...
+2025-10-07 23:00:57,268 - INFO - Generated 5991 predictions for 60 diseases
+2025-10-07 23:00:57,269 - INFO - 
+Step 5: Interpreting top predictions...
+2025-10-07 23:00:57,274 - INFO - Generated interpretations for top 10 predictions
+2025-10-07 23:00:57,274 - INFO - 
+Sample Interpretations (Top 3):
+2025-10-07 23:00:57,274 - INFO - 
+  1. Benzo(a)pyrene -> C006780
+2025-10-07 23:00:57,274 - INFO -      Score: 1.5555
+2025-10-07 23:00:57,274 - INFO -      Path: No path
+2025-10-07 23:00:57,274 - INFO - 
+  2. Tetrachlorodibenzodioxin -> C006780
+2025-10-07 23:00:57,274 - INFO -      Score: 1.4785
+2025-10-07 23:00:57,274 - INFO -      Path: No path
+2025-10-07 23:00:57,274 - INFO - 
+  3. sodium arsenite -> C006780
+2025-10-07 23:00:57,274 - INFO -      Score: 1.3113
+2025-10-07 23:00:57,274 - INFO -      Path: No path
+2025-10-07 23:00:57,274 - INFO - 
+Step 6: Saving metrics...
+2025-10-07 23:00:57,276 - INFO - Saved test metrics
+2025-10-07 23:00:57,276 - INFO - 
+============================================================
+2025-10-07 23:00:57,276 - INFO - Evaluation Complete!
+2025-10-07 23:00:57,276 - INFO - ============================================================
+2025-10-07 23:00:57,276 - INFO - Output files:
+2025-10-07 23:00:57,276 - INFO -   - test_metrics.csv / test_metrics.json
+2025-10-07 23:00:57,276 - INFO -   - predictions.csv
+2025-10-07 23:00:57,276 - INFO -   - interpretation_top10.csv
+2025-10-07 23:00:57,276 - INFO -   - plots/roc_curve.png
+2025-10-07 23:00:57,276 - INFO -   - plots/pr_curve.png
+2025-10-14 10:28:59,440 - INFO - ============================================================
+2025-10-14 10:28:59,441 - INFO - Starting Data Preprocessing
+2025-10-14 10:28:59,441 - INFO - ============================================================
+2025-10-14 10:28:59,443 - INFO - Metadata logged
+2025-10-14 10:28:59,443 - INFO - 
+Step 1: Detecting CSV files...
+2025-10-14 10:28:59,444 - INFO - Found CSV file: CTD_chemicals_diseases.csv
+2025-10-14 10:28:59,459 - INFO -   -> Inferred as chemical-disease from filename
+2025-10-14 10:28:59,463 - INFO - 
+Step 2: Loading interactions...
+2025-10-14 10:29:09,687 - INFO - Loaded chemical_disease: 9515672 rows (with header)
+2025-10-14 10:29:10,961 - INFO - Processed chemical_disease: 9515672 valid interactions
+2025-10-14 10:29:10,964 - INFO - 
+Step 3: Selecting top nodes by frequency...
+2025-10-14 10:29:12,447 - INFO - Total interactions before filtering: 9515672
+2025-10-14 10:29:12,450 - INFO - Selected nodes: 150 chemicals, 100 diseases, 0 genes
+2025-10-14 10:29:12,475 - INFO - 
+Step 4: Filtering interactions...
+2025-10-14 10:29:12,866 - INFO - Filtered interactions: 1834287 chem-dis, 0 chem-gene, 0 gene-dis
+2025-10-14 10:29:14,063 - INFO - 
+Step 5: Computing node features...
+2025-10-14 10:29:47,989 - INFO - Created feature matrix: shape (250, 4)
+2025-10-14 10:29:47,992 - INFO - 
+Step 6: Creating manifest...
+2025-10-14 10:29:48,000 - INFO - Created manifest with 24 files
+2025-10-14 10:29:48,000 - INFO - 
+============================================================
+2025-10-14 10:29:48,001 - INFO - Preprocessing Complete!
+2025-10-14 10:29:48,001 - INFO - ============================================================
+2025-10-14 10:29:48,001 - INFO - Total nodes: 250
+2025-10-14 10:29:48,001 - INFO - Total edges: 1834287
+2025-10-14 10:29:48,001 - INFO - Feature dimension: 4
+2025-10-14 10:29:48,001 - INFO - 
+Output files saved in ./outputs/
+2025-10-14 10:30:16,983 - INFO - ============================================================
+2025-10-14 10:30:16,984 - INFO - Starting Graph Construction
+2025-10-14 10:30:16,984 - INFO - ============================================================
+2025-10-14 10:30:16,984 - INFO - 
+Step 1: Loading preprocessed data...
+2025-10-14 10:30:16,984 - INFO - Loading preprocessed data...
+2025-10-14 10:30:17,371 - INFO - Loaded interactions: 1834287 chem-dis, 0 chem-gene, 0 gene-dis
+2025-10-14 10:30:17,395 - INFO - Loaded 250 nodes with 4 features
+2025-10-14 10:30:17,395 - INFO - 
+Step 2: Building edge index...
+2025-10-14 10:30:52,509 - INFO - Built edge index: 3668574 edges (undirected)
+2025-10-14 10:30:52,621 - INFO - 
+Step 3: Creating node type tensor...
+2025-10-14 10:30:52,624 - INFO - 
+Step 4: Creating PyTorch Geometric Data object...
+2025-10-14 10:30:52,626 - INFO - Created PyG Data object:
+2025-10-14 10:30:52,626 - INFO -   Nodes: 250
+2025-10-14 10:30:52,626 - INFO -   Edges: 3668574
+2025-10-14 10:30:52,626 - INFO -   Features: torch.Size([250, 4])
+2025-10-14 10:30:52,626 - INFO - 
+Step 5: Creating NetworkX graph...
+2025-10-14 10:31:26,332 - INFO - Created NetworkX graph: 250 nodes, 100 edges
+2025-10-14 10:31:26,333 - INFO - 
+Step 6: Saving graph data...
+2025-10-14 10:31:26,424 - INFO - Saved PyTorch Geometric data to outputs\graph_data.pt
+2025-10-14 10:31:26,425 - INFO - Note: Use weights_only=False when loading this file due to PyG Data objects
+2025-10-14 10:31:26,426 - INFO - Saved NetworkX graph to outputs\graph.gpickle
+2025-10-14 10:31:26,426 - INFO - 
+============================================================
+2025-10-14 10:31:26,426 - INFO - Graph Construction Complete!
+2025-10-14 10:31:26,426 - INFO - ============================================================
+2025-10-14 10:31:26,426 - INFO - Output files:
+2025-10-14 10:31:26,427 - INFO -   - graph_data.pt (PyTorch Geometric)
+2025-10-14 10:31:26,427 - INFO -   - graph.gpickle (NetworkX)
+2025-10-14 10:31:48,279 - INFO - ============================================================
+2025-10-14 10:31:48,279 - INFO - Starting GCN Training
+2025-10-14 10:31:48,279 - INFO - ============================================================
+2025-10-14 10:31:48,279 - INFO - Hyperparameters: epochs=100, lr=0.001, hidden=128, emb=128, dropout=0.5
+2025-10-14 10:31:48,285 - INFO - Using GPU: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+2025-10-14 10:31:48,286 - INFO - 
+Step 1: Loading data...
+2025-10-14 10:31:48,314 - INFO - Loaded graph: 250 nodes, 3668574 edges
+2025-10-14 10:31:48,448 - INFO - 
+Step 2: Extracting chemical-disease pairs...
+2025-10-14 10:31:48,449 - INFO - Found 150 chemicals and 100 diseases
+2025-10-14 10:31:55,395 - INFO - Found 100 positive chemical-disease edges
+2025-10-14 10:31:55,400 - INFO - 
+Step 3: Splitting edges...
+2025-10-14 10:31:55,424 - INFO - Split edges: 70 train, 15 val, 15 test
+2025-10-14 10:31:55,428 - INFO - Negative samples: 70 train, 15 val, 15 test
+2025-10-14 10:31:55,430 - INFO - 
+Step 4: Initializing model...
+2025-10-14 10:31:55,484 - INFO - Model: 17152 parameters
+2025-10-14 10:31:55,485 - INFO - 
+Step 5: Training...
+2025-10-14 10:31:57,094 - INFO - Epoch 1/100 - Loss: 0.7439, Val AUC: 0.4844, Val AUPR: 0.5687
+2025-10-14 10:31:57,097 - INFO -   -> New best model saved (AUC: 0.4844)
+2025-10-14 10:31:58,429 - INFO - Epoch 5/100 - Loss: 0.6058, Val AUC: 0.8089, Val AUPR: 0.7605
+2025-10-14 10:31:58,432 - INFO -   -> New best model saved (AUC: 0.8089)
+2025-10-14 10:32:00,240 - INFO - Epoch 10/100 - Loss: 0.5467, Val AUC: 0.8222, Val AUPR: 0.7789
+2025-10-14 10:32:00,243 - INFO -   -> New best model saved (AUC: 0.8222)
+2025-10-14 10:32:01,956 - INFO - Epoch 15/100 - Loss: 0.5674, Val AUC: 0.8311, Val AUPR: 0.7868
+2025-10-14 10:32:01,959 - INFO -   -> New best model saved (AUC: 0.8311)
+2025-10-14 10:32:03,674 - INFO - Epoch 20/100 - Loss: 0.5178, Val AUC: 0.8667, Val AUPR: 0.8378
+2025-10-14 10:32:03,676 - INFO -   -> New best model saved (AUC: 0.8667)
+2025-10-14 10:32:05,389 - INFO - Epoch 25/100 - Loss: 0.5083, Val AUC: 0.9333, Val AUPR: 0.9027
+2025-10-14 10:32:05,391 - INFO -   -> New best model saved (AUC: 0.9333)
+2025-10-14 10:32:07,127 - INFO - Epoch 30/100 - Loss: 0.5255, Val AUC: 0.9511, Val AUPR: 0.9268
+2025-10-14 10:32:07,130 - INFO -   -> New best model saved (AUC: 0.9511)
+2025-10-14 10:32:08,863 - INFO - Epoch 35/100 - Loss: 0.4793, Val AUC: 0.9644, Val AUPR: 0.9558
+2025-10-14 10:32:08,865 - INFO -   -> New best model saved (AUC: 0.9644)
+2025-10-14 10:32:10,567 - INFO - Epoch 40/100 - Loss: 0.4830, Val AUC: 0.9689, Val AUPR: 0.9632
+2025-10-14 10:32:10,571 - INFO -   -> New best model saved (AUC: 0.9689)
+2025-10-14 10:32:12,307 - INFO - Epoch 45/100 - Loss: 0.4475, Val AUC: 0.9867, Val AUPR: 0.9866
+2025-10-14 10:32:12,309 - INFO -   -> New best model saved (AUC: 0.9867)
+2025-10-14 10:32:14,031 - INFO - Epoch 50/100 - Loss: 0.4487, Val AUC: 0.9822, Val AUPR: 0.9815
+2025-10-14 10:32:15,738 - INFO - Epoch 55/100 - Loss: 0.4487, Val AUC: 0.9822, Val AUPR: 0.9815
+2025-10-14 10:32:17,485 - INFO - Epoch 60/100 - Loss: 0.4568, Val AUC: 0.9822, Val AUPR: 0.9815
+2025-10-14 10:32:19,248 - INFO - Epoch 65/100 - Loss: 0.4460, Val AUC: 0.9822, Val AUPR: 0.9815
+2025-10-14 10:32:21,019 - INFO - Epoch 70/100 - Loss: 0.4549, Val AUC: 0.9867, Val AUPR: 0.9866
+2025-10-14 10:32:22,787 - INFO - Epoch 75/100 - Loss: 0.4432, Val AUC: 0.9867, Val AUPR: 0.9866
+2025-10-14 10:32:24,547 - INFO - Epoch 80/100 - Loss: 0.4138, Val AUC: 0.9822, Val AUPR: 0.9815
+2025-10-14 10:32:26,320 - INFO - Epoch 85/100 - Loss: 0.4472, Val AUC: 0.9867, Val AUPR: 0.9866
+2025-10-14 10:32:28,115 - INFO - Epoch 90/100 - Loss: 0.4500, Val AUC: 0.9867, Val AUPR: 0.9866
+2025-10-14 10:32:29,949 - INFO - Epoch 95/100 - Loss: 0.4467, Val AUC: 0.9867, Val AUPR: 0.9866
+2025-10-14 10:32:29,949 - INFO - Early stopping at epoch 95
+2025-10-14 10:32:29,977 - INFO - 
+Step 6: Generating final embeddings...
+2025-10-14 10:32:30,153 - INFO - Saved embeddings: shape (250, 128)
+2025-10-14 10:32:30,325 - INFO - 
+Final Test Performance:
+2025-10-14 10:32:30,326 - INFO -   Test AUC: 0.8978
+2025-10-14 10:32:30,326 - INFO -   Test AUPR: 0.8460
+2025-10-14 10:32:30,328 - INFO - 
+============================================================
+2025-10-14 10:32:30,328 - INFO - Training Complete!
+2025-10-14 10:32:30,328 - INFO - ============================================================
+2025-10-14 10:32:30,329 - INFO - Output files:
+2025-10-14 10:32:30,329 - INFO -   - model_best.pt
+2025-10-14 10:32:30,329 - INFO -   - embeddings.npy
+2025-10-14 10:32:30,329 - INFO -   - train_log.csv
+2025-10-14 10:32:30,329 - INFO -   - final_metrics.json
+2025-10-14 10:32:46,335 - INFO - ============================================================
+2025-10-14 10:32:46,336 - INFO - Starting Model Evaluation
+2025-10-14 10:32:46,336 - INFO - ============================================================
+2025-10-14 10:32:46,336 - INFO - 
+Step 1: Loading model and data...
+2025-10-14 10:32:46,386 - INFO - Loaded model and data: 250 nodes, embeddings shape (250, 128)
+2025-10-14 10:32:46,386 - INFO - 
+Step 2: Evaluating on test set...
+2025-10-14 10:32:46,414 - INFO - 
+Test Set Metrics:
+2025-10-14 10:32:46,414 - INFO -   ROC AUC: 0.8978
+2025-10-14 10:32:46,415 - INFO -   AUPR: 0.8460
+2025-10-14 10:32:46,415 - INFO -   Precision@10: 0.8000
+2025-10-14 10:32:46,415 - INFO -   Recall@10: 0.5333
+2025-10-14 10:32:46,415 - INFO - 
+Step 3: Generating plots...
+2025-10-14 10:32:46,912 - INFO - Saved ROC curve to outputs\plots\roc_curve.png
+2025-10-14 10:32:47,234 - INFO - Saved PR curve to outputs\plots\pr_curve.png
+2025-10-14 10:32:47,234 - INFO - 
+Step 4: Generating predictions for all diseases...
+2025-10-14 10:32:48,371 - INFO - Generated 10000 predictions for 100 diseases
+2025-10-14 10:32:48,372 - INFO - 
+Step 5: Interpreting top predictions...
+2025-10-14 10:32:48,379 - INFO - Generated interpretations for top 10 predictions
+2025-10-14 10:32:48,379 - INFO - 
+Sample Interpretations (Top 3):
+2025-10-14 10:32:48,380 - INFO - 
+  1. Benzo(a)pyrene -> C006780
+2025-10-14 10:32:48,380 - INFO -      Score: 7.7107
+2025-10-14 10:32:48,380 - INFO -      Path: No path
+2025-10-14 10:32:48,380 - INFO - 
+  2. Tetrachlorodibenzodioxin -> C006780
+2025-10-14 10:32:48,380 - INFO -      Score: 7.4408
+2025-10-14 10:32:48,381 - INFO -      Path: No path
+2025-10-14 10:32:48,381 - INFO - 
+  3. sodium arsenite -> C006780
+2025-10-14 10:32:48,381 - INFO -      Score: 6.8180
+2025-10-14 10:32:48,381 - INFO -      Path: No path
+2025-10-14 10:32:48,381 - INFO - 
+Step 6: Saving metrics...
+2025-10-14 10:32:48,383 - INFO - Saved test metrics
+2025-10-14 10:32:48,385 - INFO - 
+============================================================
+2025-10-14 10:32:48,385 - INFO - Evaluation Complete!
+2025-10-14 10:32:48,385 - INFO - ============================================================
+2025-10-14 10:32:48,386 - INFO - Output files:
+2025-10-14 10:32:48,386 - INFO -   - test_metrics.csv / test_metrics.json
+2025-10-14 10:32:48,386 - INFO -   - predictions.csv
+2025-10-14 10:32:48,386 - INFO -   - interpretation_top10.csv
+2025-10-14 10:32:48,386 - INFO -   - plots/roc_curve.png
+2025-10-14 10:32:48,386 - INFO -   - plots/pr_curve.png

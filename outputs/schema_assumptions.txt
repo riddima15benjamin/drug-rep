@@ -1,0 +1,3 @@
+=== Schema Assumptions ===
+- chemical_disease: Using column '06-Paris-LA-66 protocol' as ChemicalID
+- chemical_disease: Using column 'C046983' as DiseaseID

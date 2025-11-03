@@ -1,0 +1,16 @@
+=== Detected CSV Files ===
+Total files found: 1
+- chemical_disease: CTD_chemicals_diseases.csv
+
+=== Schema Samples ===
+
+CTD_chemicals_diseases.csv:
+  Columns: ['06-Paris-LA-66 protocol', 'C046983', 'Unnamed: 2', 'Precursor Cell Lymphoblastic Leukemia-Lymphoma', 'MESH:D054198', 'therapeutic', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', '4519131']
+  Has Header: True
+  Sample:
+  06-Paris-LA-66 protocol  C046983  Unnamed: 2 Precursor Cell Lymphoblastic Leukemia-Lymphoma     MESH:D054198  therapeutic Unnamed: 6  Unnamed: 7     Unnamed: 8            4519131
+0                10074-G5  C534883         NaN                                 Adenocarcinoma     MESH:D000230          NaN        MYC        4.08            NaN           26432044
+1                10074-G5  C534883         NaN                         Adenocarcinoma of Lung  MESH:D000077192          NaN        MYC        4.31            NaN  26656844|27602772
+2                10074-G5  C534883         NaN                                       Alopecia     MESH:D000505          NaN         AR        4.51            NaN           15902657
+3                10074-G5  C534883         NaN                Androgen-Insensitivity Syndrome     MESH:D013734          NaN         AR        6.88  300068|312300    1303262|8281139
+4                10074-G5  C534883         NaN                                    Astrocytoma     MESH:D001254          NaN         AR        4.96            NaN           24680642

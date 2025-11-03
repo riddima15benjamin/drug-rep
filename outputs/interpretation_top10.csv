@@ -1,0 +1,11 @@
+disease_id,chemical_id,score,rank,path_length,intermediate_genes,full_path
+C006780,Benzo(a)pyrene,7.710736274719238,2,inf,No path,No path
+C006780,Tetrachlorodibenzodioxin,7.440804481506348,3,inf,No path,No path
+C006780,sodium arsenite,6.817990779876709,4,inf,No path,No path
+C006780,Valproic Acid,6.590517997741699,5,inf,No path,No path
+C006780,Acetaminophen,5.923276901245117,6,inf,No path,No path
+C006780,Estradiol,5.400876045227051,7,inf,No path,No path
+C006780,Particulate Matter,4.879853248596191,8,inf,No path,No path
+C006780,Aflatoxin B1,4.422886371612549,9,inf,No path,No path
+C006780,Cadmium Chloride,4.319777011871338,10,inf,No path,No path
+C006780,titanium dioxide,4.283907413482666,11,inf,No path,No path

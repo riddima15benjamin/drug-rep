@@ -1,0 +1,252 @@
+===============================================================================
+DRUG REPURPOSING PROJECT - DELIVERABLES CHECKLIST
+===============================================================================
+
+Date: October 7, 2025
+Project: Drug Repurposing for Accelerated Therapeutic Discovery
+Model: Graph Convolutional Network (GCN)
+Dataset: CTD (Comparative Toxicogenomics Database)
+
+===============================================================================
+REQUIRED FILES
+===============================================================================
+
+CORE SCRIPTS:
+[✓] preprocess.py              - Data ingestion & preprocessing
+[✓] build_graph.py             - Graph construction
+[✓] train_gcn.py               - GCN model training
+[✓] evaluate.py                - Model evaluation & interpretation
+[✓] app.py                     - Streamlit interactive demo
+
+CONFIGURATION & DOCUMENTATION:
+[✓] requirements.txt           - Python dependencies
+[✓] README.md                  - Complete user guide and instructions
+
+REPRODUCIBILITY:
+[✓] notebook.ipynb             - End-to-end Jupyter notebook
+
+TESTING:
+[✓] tests/test_smoke.sh        - Smoke tests for validation
+
+OUTPUTS DIRECTORY (./outputs/):
+[ ] model_best.pt              - Trained model weights (generated after training)
+[ ] embeddings.npy             - Node embeddings (generated after training)
+[ ] predictions.csv            - Drug-disease predictions (generated after evaluation)
+[ ] graph_data.pt              - PyTorch Geometric graph (generated after build_graph)
+[ ] graph.gpickle              - NetworkX graph (generated after build_graph)
+[ ] node_features.npy          - Node feature matrix (generated after preprocessing)
+[ ] node_to_idx.json           - Node index mapping (generated after preprocessing)
+[ ] top_nodes.json             - Selected node lists (generated after preprocessing)
+[ ] train_log.csv              - Training history (generated after training)
+[ ] test_metrics.json          - Evaluation metrics (generated after evaluation)
+[ ] interpretation_top10.csv   - Top prediction interpretations (generated after evaluation)
+[ ] plots/roc_curve.png        - ROC curve plot (generated after evaluation)
+[ ] plots/pr_curve.png         - PR curve plot (generated after evaluation)
+[ ] log.txt                    - Combined execution log (generated during execution)
+[ ] manifest.csv               - File manifest (generated after preprocessing)
+
+REPORTS & SLIDES (./results/report-slides/):
+[✓] report.md                  - Technical report (Markdown - convert to PDF)
+[✓] demo-slides.md             - Presentation slides (Markdown - convert to PPTX)
+[✓] README.txt                 - Instructions for report generation
+
+===============================================================================
+EXECUTION CHECKLIST
+===============================================================================
+
+SETUP:
+[ ] Dataset downloaded from CTD (https://ctdbase.org/)
+[ ] CSV files placed in ./dataset/ directory
+[ ] Virtual environment created
+[ ] Dependencies installed (requirements.txt)
+[ ] PyTorch and PyTorch Geometric installed
+
+EXECUTION STEPS:
+[ ] Step 1: python preprocess.py --top_chemicals 150 --top_diseases 100 --top_genes 200
+[ ] Step 2: python build_graph.py
+[ ] Step 3: python train_gcn.py --epochs 100
+[ ] Step 4: python evaluate.py
+[ ] Step 5: streamlit run app.py (for demo)
+
+ALTERNATIVE:
+[ ] Run complete pipeline via: jupyter notebook notebook.ipynb
+
+VALIDATION:
+[ ] Run smoke tests: bash tests/test_smoke.sh (Linux/Mac) or sh tests/test_smoke.sh (Windows Git Bash)
+[ ] Verify all output files exist in ./outputs/
+[ ] Check model performance metrics (AUC > 0.7 expected)
+[ ] Test Streamlit demo loads correctly
+
+===============================================================================
+FEATURES IMPLEMENTED
+===============================================================================
+
+DATA PROCESSING:
+[✓] Auto-detection of CTD CSV formats
+[✓] Frequency-based node selection with adaptive thresholds
+[✓] Node feature engineering (type one-hot + degree)
+[✓] Robust error handling and logging
+[✓] Schema assumption documentation
+
+GRAPH CONSTRUCTION:
+[✓] Heterogeneous to homogeneous graph conversion
+[✓] Undirected edge creation
+[✓] PyTorch Geometric Data object creation
+[✓] NetworkX graph for analysis and visualization
+
+MODEL TRAINING:
+[✓] 2-layer GCN architecture (128 hidden, 128 embedding)
+[✓] Link prediction via dot-product scoring
+[✓] Negative sampling (1:1 ratio)
+[✓] Train/validation/test split (70/15/15)
+[✓] Early stopping based on validation AUC
+[✓] Training log and metrics tracking
+[✓] GPU/CPU device detection
+
+EVALUATION:
+[✓] ROC AUC and AUPR metrics
+[✓] Precision@K and Recall@K (K=1,3,5,10,20,50,100)
+[✓] ROC and PR curve visualizations
+[✓] Top-100 predictions per disease
+[✓] Shortest path interpretation for top-10 novel predictions
+[✓] Gene intermediate identification
+
+STREAMLIT DEMO:
+[✓] Disease selection dropdown
+[✓] Configurable top-K predictions
+[✓] Prediction table with known/novel flags
+[✓] Interactive subgraph visualization (Plotly)
+[✓] Embedding space projection (PCA/t-SNE)
+[✓] Downloadable CSV export
+[✓] Performance metrics display
+[✓] Graceful error handling for missing files
+
+REPRODUCIBILITY:
+[✓] Seed setting (SEED=42) across all scripts
+[✓] Metadata logging (Python version, timestamp)
+[✓] Comprehensive README with installation instructions
+[✓] End-to-end Jupyter notebook
+[✓] Modular, well-documented code
+[✓] Type hints and docstrings
+
+===============================================================================
+SYSTEM REQUIREMENTS
+===============================================================================
+
+SOFTWARE:
+- Python >= 3.9
+- PyTorch >= 2.0.0
+- PyTorch Geometric >= 2.3.0
+- See requirements.txt for full list
+
+HARDWARE:
+- Minimum: 8GB RAM, CPU
+- Recommended: 16GB RAM, GPU (optional)
+- Disk space: ~1GB for outputs
+
+ESTIMATED EXECUTION TIME:
+- Preprocessing: 2-5 minutes
+- Graph construction: 1-2 minutes
+- Training (100 epochs): 20-40 minutes (CPU), 5-10 minutes (GPU)
+- Evaluation: 2-5 minutes
+- Total: ~30-60 minutes (CPU), ~15-20 minutes (GPU)
+
+===============================================================================
+KNOWN LIMITATIONS & NOTES
+===============================================================================
+
+1. Dataset: 
+   - Requires manual download from CTD website
+   - Auto-detection works for standard CTD formats
+   - Custom CSVs may need column name adjustments
+
+2. Computational:
+   - Default node selection (150/100/200) balances performance and feasibility
+   - Large graphs may require reduced selection or GPU
+   - Out-of-memory handling reduces selection by 50% automatically
+
+3. Model:
+   - Homogeneous graph (loses edge type information)
+   - Simple node features (no molecular structures)
+   - Dot-product scoring (could use MLP decoder)
+
+4. Predictions:
+   - Require experimental validation before clinical use
+   - Based solely on CTD data (missing other knowledge sources)
+   - Shortest paths may not reflect true biological mechanisms
+
+5. Platform:
+   - Developed on Windows 10
+   - Compatible with Linux/Mac with minor script adjustments
+   - Shell script (test_smoke.sh) requires bash or Git Bash on Windows
+
+===============================================================================
+TROUBLESHOOTING
+===============================================================================
+
+ISSUE: PyTorch Geometric installation fails
+SOLUTION: Install separately based on PyTorch/CUDA version
+  - See: https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html
+  - CPU: pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-2.0.0+cpu.html
+
+ISSUE: Out of memory during training
+SOLUTION: Reduce node selection counts in preprocess.py
+  - Example: --top_chemicals 100 --top_diseases 50 --top_genes 100
+
+ISSUE: CSV detection fails
+SOLUTION: Check column names and refer to schema_assumptions.txt
+  - Rename columns to match: ChemicalID, DiseaseID, GeneID
+
+ISSUE: Streamlit app shows "file not found"
+SOLUTION: Run evaluation step first to generate predictions.csv
+  - python evaluate.py
+
+ISSUE: Smoke tests fail on Windows
+SOLUTION: Use Git Bash or WSL to run .sh scripts
+  - Alternatively: manually verify file existence
+
+===============================================================================
+CONTACT & SUPPORT
+===============================================================================
+
+For issues or questions:
+1. Check README.md for detailed instructions
+2. Review log files in ./outputs/log.txt
+3. Verify all prerequisites are installed
+4. Check schema_assumptions.txt for data parsing notes
+
+===============================================================================
+PROJECT COMPLETION STATUS
+===============================================================================
+
+Core Implementation:        [✓] COMPLETE
+Documentation:              [✓] COMPLETE
+Testing Framework:          [✓] COMPLETE
+Demo Application:           [✓] COMPLETE
+Reproducibility:            [✓] COMPLETE
+
+Overall Project Status:     [✓] READY FOR EXECUTION
+
+===============================================================================
+NEXT STEPS
+===============================================================================
+
+1. Download CTD dataset and place CSV files in ./dataset/
+2. Install dependencies: pip install -r requirements.txt
+3. Run preprocessing: python preprocess.py
+4. Run graph construction: python build_graph.py
+5. Train model: python train_gcn.py --epochs 100
+6. Evaluate: python evaluate.py
+7. Launch demo: streamlit run app.py
+
+OR
+
+Run end-to-end notebook: jupyter notebook notebook.ipynb
+
+===============================================================================
+END OF CHECKLIST
+===============================================================================
+
+Last Updated: October 7, 2025
+System Version: 1.0
+
