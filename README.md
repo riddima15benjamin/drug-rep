@@ -1,4 +1,4 @@
-# Drug Repurposing for Accelerated Therapeutic Discovery
+# Cross-Disease Drug Repurposing for Accelerated Therapeutic Discovery
 
 A complete end-to-end machine learning system for drug repurposing using **Graph Convolutional Networks (GCN)** on the **Comparative Toxicogenomics Database (CTD)**.
 
